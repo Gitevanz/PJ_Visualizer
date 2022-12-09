@@ -11,7 +11,7 @@ namespace ArtDotNet
 	public class ArtNetClient : MonoBehaviour
 	{
 
-		public byte[] DMXdata = new byte[512];		
+		public byte[] DMXdata = new byte[530];		
 		public const int PORT = 6454;
 		public const string NAME = "ArtNetServer";		
 		int universe, net, subnet;
@@ -72,12 +72,12 @@ namespace ArtDotNet
 		void Communicator_DataReceived(object sender, UdpPacket e)
 		{
 
-			packet = new ArtNetPacket(e.EndPoint, e.RawData);
+			/*packet = new ArtNetPacket(e.EndPoint, e.RawData);
 			if (DMXdata.Length == 0)
             {
 				DMXdata = new byte[packet.RawData.Length];
 			}
-			
+			*/
 			
 			
 		}
@@ -85,9 +85,11 @@ namespace ArtDotNet
         {
 			if (packet != null && packet.IsValid && packet.RawData.Length == 530)
 			{
-				Debug.Log("Received From:" + packet.RawData.Length + " DMX " + DMXdata.Length);				
+				Debug.Log("Received From:" + packet.RawData.Length + " DMX " + DMXdata.Length);
+
 				for (int i = 0; i < 511; i++)
 				{
+					
 					DMXdata[i] = packet.RawData[i];
 				}
 				
