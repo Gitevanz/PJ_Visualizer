@@ -4,7 +4,7 @@ using UnityEngine;
 using ArtDotNet;
 
 
-public class DMX_Controll : MonoBehaviour
+public class DMX_ControllBackup : MonoBehaviour
 {
     
     public float vSpeed;

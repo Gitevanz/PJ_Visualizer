@@ -26,7 +26,7 @@ public class Floater : MonoBehaviour
         // Spin object around Y-Axis
         float floatrotation = Mathf.Sin(Time.fixedTime * Mathf.PI) * degreesPerSecond;
 
-transform.Rotate(new Vector3(0f, floatrotation, 0f), Space.World);
+        transform.eulerAngles = new Vector3(-90f, floatrotation, 0f);
 
         // Float up/down with a Sin()
         tempPos = posOffset;

@@ -72,12 +72,12 @@ namespace ArtDotNet
 		void Communicator_DataReceived(object sender, UdpPacket e)
 		{
 
-			/*packet = new ArtNetPacket(e.EndPoint, e.RawData);
+			packet = new ArtNetPacket(e.EndPoint, e.RawData);
 			if (DMXdata.Length == 0)
             {
 				DMXdata = new byte[packet.RawData.Length];
 			}
-			*/
+			
 			
 			
 		}

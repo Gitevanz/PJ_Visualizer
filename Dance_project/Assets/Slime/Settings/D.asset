@@ -21,15 +21,15 @@ MonoBehaviour:
   decayRate: 0.26
   diffuseRate: 8.92
   speciesSettings:
-  - moveSpeed: 23.4
+  - moveSpeed: 38.44
     turnSpeed: 0.4
     sensorAngleSpacing: 39.25
     sensorOffsetDst: 9.44
     sensorSize: 1
-    colour: {r: 1, g: 0.1537725, b: 0, a: 0}
+    colour: {r: 0.9245283, g: 0.8155037, b: 0.8155037, a: 0}
   - moveSpeed: 10
     turnSpeed: 7.8
-    sensorAngleSpacing: 12.87
+    sensorAngleSpacing: 5.6
     sensorOffsetDst: 5
     sensorSize: 1
     colour: {r: 0, g: 0.7696705, b: 1, a: 0}
